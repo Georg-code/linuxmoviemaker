@@ -1,0 +1,21 @@
+{
+  "music": "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+  "copyright": "me",
+  "use_intro": true,
+  "day": "thursday",
+
+  "scenes": [
+    {
+      "background_theme": "autumn",
+      "duration": 10,
+      "text": "Ich wünsche dir einen \nschönen Start in den Montag!",
+      "textColor": "blue",
+      "textStroke": "red",
+      "textSize": 70,
+      "textFont": "Pacifico-Regular",
+      "gif_theme": "autumn"
+    }
+  ],
+
+  "final": []
+}

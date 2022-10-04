@@ -1,0 +1,70 @@
+{
+    "intro": [
+      "Guten Morgen,",
+      "Halöle!",
+      "Guten schönen Tag!",
+      "Liebe Alle",
+      "Liebe Grüße Zusammen"
+    ],
+    "emojis": [
+      "👋",
+      "😀",
+      "🍀",
+      "☕",
+      "❤️",
+      "🙋‍♂️",
+      "💐",
+      "🤗",
+      "🌹",
+      "🥀",
+      "🌷",
+      "🌻",
+      "😍",
+      "💖",
+      "🐕",
+      "🙏",
+      "😇",
+      "💞",
+      "💐",
+      "☀️"
+    ],
+    "monday": [
+        "Ich wünsche dir einen schönen Start in den Montag!",
+        "Ich wünsche dir einen guten Start in die neue Woche!",
+        "Ich wünsche dir einen guten Start in die diese Woche!"
+
+
+
+
+    ],
+    "tuesday": [
+        "Ich wünsche dir einen schönen Start in den Dienstag!"
+
+    ],
+    "wednesday": [
+        "Ich wünsche dir einen schönen Start in den Mittwoch!"
+
+    ],
+    "thursday": [
+        "Ich wünsche dir einen schönen Start in den Donnerstag!"
+
+    ],
+    "friday": [
+        "Ich wünsche dir einen schönen Start in den Freitag!",
+        "Bald ist Wochenende! Nur noch ein Tag!"
+
+    ],
+    "saturday": [
+        "Ich wünsche dir einen schönen Start in den Samstag!",
+        "Ich wünsche dir ein erholsames Wochenende!"
+
+    ],
+    "sunday": [
+        "Ich wünsche dir einen schönen Start in den Sonntag!",
+        "Ich wünsche dir ein erholsames Wochenende!"
+
+    ]
+
+    
+  }
+  
