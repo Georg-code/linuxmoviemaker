@@ -1,45 +1,47 @@
-from attr import has
-from matplotlib.animation import MovieWriter
 from moviepy.editor import *
+from moviepy.video.tools.segmenting import findObjects
 import json 
-from attr import has
-from PIL import Image
-import requests
-from io import BytesIO
+import numpy as np
 
-import random
-import string
 
 
 
 script = json.load(open("scripts/script1.json"))
 final_scene = []
 cache = []
+current_time = 0
+screensize = (1920,1080)
+
 
 
 def scenebuilder(background, duration, text, textColor, textStroke, textSize, font, gif_theme):
-    background = ImageClip(getImage(background)).set_duration(duration)
-    gif = VideoFileClip("assets/gifs/"+gif_theme+".gif").loop(10).set_duration(duration)
-    txt_clip = TextClip(text,fontsize=textSize,color=textColor, stroke_color=textStroke, stroke_width=2, font=font)
-    txt_clip = txt_clip.set_pos('center').set_duration(duration)
-    video = CompositeVideoClip([background, gif, txt_clip])
+    global current_time
+    global screensize
+    backgroundi = ImageClip(background).set_duration(duration).resize(screensize)
+    gif = VideoFileClip("assets/gifs/gif3.gif", has_mask=True)
+    gif = gif.set_fps(7)
+    gif = gif.loop(True)
+    gif = gif.set_duration(duration)
+    txt_clip = TextClip(text,fontsize=textSize,color=textColor, stroke_color=textStroke, stroke_width=2, font=font).set_duration(10)
+   
+    video = CompositeVideoClip([backgroundi, gif, txt_clip.set_pos('center')], size=screensize)
+    current_time = current_time + duration
+
+
+
+
     return video
 
 
-def getImage(theme):
-    filename = ''.join(random.choice(string.ascii_lowercase) for i in range(16))
-    cache.append(filename)
-    resource = urllib.urlopen("http://www.digimouth.com/news/media/2011/09/google-logo.jpg", "/cache/"+ filename +".jpg")
-    output = open("/cache/" + filename + ".jpg","wb")
-    output.write(resource.read())
-    output.close()
-    return "/cache/"+ filename +".jpg"
+
 
 for i in script['scenes']:
     final_scene.append(scenebuilder(i['background_theme'], i['duration'], i['text'], i['textColor'], i['textStroke'], i['textSize'], i['textFont'], i['gif_theme']))
 
 
-video = CompositeVideoClip(final_scene)
-video.write_videofile("edited.mp4", fps=25, threads=4)
+video = concatenate_videoclips(final_scene)
+video.write_videofile("edited.mp4", fps=25)
+
+
 
 
