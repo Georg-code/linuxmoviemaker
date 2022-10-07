@@ -1,0 +1,62 @@
+{
+    "music": "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+    "copyright": "me",
+    "use_intro": true,
+    "day": "thursday",
+  
+    "scenes": [
+      {
+        "background_theme": "assets/images/bbhsmyimkwubktsd.jpg",
+        "duration": 10,
+        "text": "Für einen schönen Sonntag",
+        "textColor": "white",
+        "textStroke": "blue",
+        "textSize": 70,
+        "textFont": "Pacifico-Regular",
+        "gif_theme": "autumn"
+      },
+      {
+        "background_theme": "assets/images/bbhsmyimkwubktsd.jpg",
+        "duration": 10,
+        "text": "Wünsche ich dir, viel Glück und Freude!",
+        "textColor": "white",
+        "textStroke": "blue",
+        "textSize": 70,
+        "textFont": "Pacifico-Regular",
+        "gif_theme": "autumn"
+      },
+      {
+        "background_theme": "assets/images/bbhsmyimkwubktsd.jpg",
+        "duration": 10,
+        "text": "Und einen erholsamen Tag!",
+        "textColor": "white",
+        "textStroke": "blue",
+        "textSize": 70,
+        "textFont": "Pacifico-Regular",
+        "gif_theme": "autumn"
+      },
+      {
+        "background_theme": "assets/images/bbhsmyimkwubktsd.jpg",
+        "duration": 10,
+        "text": "Dafür sende ich dir herzliche Gruße!",
+        "textColor": "white",
+        "textStroke": "blue",
+        "textSize": 70,
+        "textFont": "Pacifico-Regular",
+        "gif_theme": "autumn"
+      },
+      {
+        "background_theme": "assets/images/bbhsmyimkwubktsd.jpg",
+        "duration": 10,
+        "text": "Teile diese Grüße mit deinen Freunden! \n wenn du auch ihnen eine schöne Zeit  \nwünschen möchtest!",
+        "textColor": "white",
+        "textStroke": "blue",
+        "textSize": 70,
+        "textFont": "Pacifico-Regular",
+        "gif_theme": "autumn"
+      }
+    ],
+  
+    "final": []
+  }
+  

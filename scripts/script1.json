@@ -6,11 +6,11 @@
 
   "scenes": [
     {
-      "background_theme": "autumn",
+      "background_theme": "assets/images/bbhsmyimkwubktsd.jpg",
       "duration": 10,
-      "text": "Ich wünsche dir einen \nschönen Start in den Montag!",
-      "textColor": "blue",
-      "textStroke": "red",
+      "text": "Für einen schönen Sonntag",
+      "textColor": "white",
+      "textStroke": "blue",
       "textSize": 70,
       "textFont": "Pacifico-Regular",
       "gif_theme": "autumn"
